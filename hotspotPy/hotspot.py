@@ -6,9 +6,9 @@ print("\n")
 command = ''
 while command != "exit":
     print("Type this commands : ")
-    print("start for starting hotspot")
-    print("stop for stopping hotspot")
-    print("exit for exiting from programme")
+    print("==> start <== for starting hotspot")
+    print("==> stop  <== for stopping hotspot")
+    print("==> exit  <== for exiting from programme")
     command = input("Enter yor cmd here: ")
     if command == 'start':
         print("Starting hotspot******")
