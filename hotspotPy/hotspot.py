@@ -4,8 +4,6 @@ import os
 
 os.system("cls")
 print("\n")
-ssid = input("Enter your hotspot ssid: ")
-key = input("Enter your hotspot password: ")
 command = ''
 while command != "exit":
     print('\n\n\n')
@@ -16,6 +14,8 @@ while command != "exit":
     command = input("Enter yor cmd here: ")
     if command == 'start':
         print("*****Starting hotspot******")
+        ssid = input("Enter your hotspot ssid: ")
+        key = input("Enter your hotspot password: ")
         os.system('netsh wlan set hostednetwork mode=allow ssid='+ssid+' key='+key)
         os.system('netsh wlan start hostednetwork')
     elif command == 'stop':
